@@ -1,0 +1,11 @@
+<div class="container" *ngIf="tarjetaActual">
+    <h1>{{ tarjetaActual.name }}</h1>
+    <img [src]="tarjetaActual?.card_images[0].image_url_small" alt="" />
+    <div class="prices">
+        <h2>Precios</h2>
+    </div>
+    <div class="sets">
+        <h2>Sets</h2>
+    </div>
+    <a routerLink="/dashboard/lista">Regresar...</a>
+</div>

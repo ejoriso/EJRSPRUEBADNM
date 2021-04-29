@@ -1,0 +1,8 @@
+<p>lista-tarjetas works!</p>
+<div class="lista" infiniteScroll (scrolled)="onScroll()">
+    <div class="tarjeta" *ngFor="let tarjeta of listaTarjetas">
+        <img [src]="tarjeta.card_images[0].image_url_small" alt="" />
+        <p>{{ tarjeta.name }}</p>
+        <a [routerLink]="['/dashboard', tarjeta.id]">Detalles</a>
+    </div>
+</div>
